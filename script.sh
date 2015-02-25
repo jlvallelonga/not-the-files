@@ -22,5 +22,3 @@ curl -o ~/.obiwan $url
 echo "alias ls='ls | cat ~/.obiwan && echo && echo \"THESE ARE NOT THE FILES YOU ARE LOOKING FOR\" && echo && ls'" >> ~/.bashrc
 
 cat ~/.bashrc
-
-source ~/.bashrc
