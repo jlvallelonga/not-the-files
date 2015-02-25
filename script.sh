@@ -15,3 +15,12 @@ done
 
 echo $file_width
 
+url="https://raw.githubusercontent.com/jlvallelonga/not-the-files/master/obiwans/"$file_width".txt"
+
+curl -o ~/.obiwan $url
+
+echo "alias ls='ls | cat ~/.obiwan && echo && echo \"THESE ARE NOT THE FILES YOU ARE LOOKING FOR\" && echo && ls'" >> ~/.bashrc
+
+cat ~/.bashrc
+
+source ~/.bashrc
